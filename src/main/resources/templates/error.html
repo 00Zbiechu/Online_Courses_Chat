@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Online Courses Chat</title>
+    <link rel="stylesheet" th:href="@{/css/index.css}">
+</head>
+<body>
+<noscript>
+    <h2>Sorry! Your browser doesn't support Javascript</h2>
+</noscript>
+
+<div id="username-page">
+    <div class="username-page-container">
+        <h1 class="title">Chat Error</h1>
+        <p>There seems to be a problem with the page you requested (<span th:text="${path}"></span>).</p>
+        <p th:text="${'The status code is ' + errorStatus + '.'}"></p>
+        <p th:text="${'Field: ' + field + '.'}"></p>
+        <p th:text="${'Further details: ' + errorCode + '.'}"></p>
+        <a href="http://localhost:4200">
+            <button type="submit" class="btn btn-warning">Back to the home page</button>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
